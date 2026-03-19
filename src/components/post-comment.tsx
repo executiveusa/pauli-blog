@@ -27,10 +27,10 @@ export function PostComment({ slug }: PostCommentProps) {
     <div data-testid="comments-container" className="comments">
       {mounted && (
         <Giscus
-          repo="sabertazimi/blog"
-          repoId="MDEwOlJlcG9zaXRvcnkxMjc0MDY4MTE="
+          repo="executiveusa/pauli-blog"
+          repoId="R_kgDORrYLKQ"
           category="Announcements"
-          categoryId="DIC_kwDOB5gS284B_CSm"
+          categoryId="DIC_kwDORrYLKc4C4x83"
           mapping="specific"
           term={`${slug.charAt(0).toUpperCase()}${slug.slice(1)}`}
           strict="0"

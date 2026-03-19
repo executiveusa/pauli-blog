@@ -113,19 +113,19 @@
   --light: oklch(98.2% 0.002 247.8deg);
   --dark: oklch(34.5% 0.013 248.2deg);
   --background: oklch(100% 0 0deg);
-  --foreground: oklch(14.5% 0 0deg);
+  --foreground: oklch(12% 0 0deg);
   --card: oklch(100% 0 0deg);
-  --card-foreground: oklch(14.5% 0 0deg);
+  --card-foreground: oklch(12% 0 0deg);
   --popover: oklch(100% 0 0deg);
-  --popover-foreground: oklch(14.5% 0 0deg);
-  --primary: oklch(20.5% 0 0deg);
-  --primary-foreground: oklch(98.5% 0 0deg);
-  --secondary: oklch(97% 0 0deg);
+  --popover-foreground: oklch(12% 0 0deg);
+  --primary: oklch(55% 0.2 30deg);
+  --primary-foreground: oklch(100% 0 0deg);
+  --secondary: oklch(96% 0.01 30deg);
   --secondary-foreground: oklch(20.5% 0 0deg);
-  --muted: oklch(97% 0 0deg);
-  --muted-foreground: oklch(55.6% 0 0deg);
-  --accent: oklch(97% 0 0deg);
-  --accent-foreground: oklch(20.5% 0 0deg);
+  --muted: oklch(96% 0.01 30deg);
+  --muted-foreground: oklch(50% 0 0deg);
+  --accent: oklch(96% 0.02 30deg);
+  --accent-foreground: oklch(45% 0.2 30deg);
   --success: oklch(52.7% 0.154 150.069deg);
   --destructive: oklch(57.7% 0.245 27.325deg);
   --border: oklch(92.2% 0 0deg);
@@ -145,9 +145,8 @@
   --sidebar-border: oklch(92.2% 0 0deg);
   --sidebar-ring: oklch(70.8% 0 0deg);
   --font-sans:
-    'LXGW NeoXiHei', 'LXGW NeoXiHei Plus', 'SF Pro', arial, 'Microsoft YaHei', '黑体', '宋体', inter, -apple-system,
-    blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu, cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    inter, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu, cantarell,
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   --font-serif: 'LXGW WenKai', 'Source Han', 'Times New Roman', 'Droid Serif', times, 'Source Serif Pro', serif;
   --font-mono:
     'Fira Code', 'Fira Mono', 'LXGW WenKai Mono', 'Roboto Mono', 'Noto Mono', 'Oxygen Mono', 'Ubuntu Mono',
@@ -155,20 +154,20 @@
 }
 
 .dark {
-  --background: oklch(14.5% 0 0deg);
-  --foreground: oklch(98.5% 0 0deg);
-  --card: oklch(20.5% 0 0deg);
-  --card-foreground: oklch(98.5% 0 0deg);
-  --popover: oklch(20.5% 0 0deg);
-  --popover-foreground: oklch(98.5% 0 0deg);
-  --primary: oklch(92.2% 0 0deg);
-  --primary-foreground: oklch(20.5% 0 0deg);
-  --secondary: oklch(26.9% 0 0deg);
-  --secondary-foreground: oklch(98.5% 0 0deg);
-  --muted: oklch(26.9% 0 0deg);
-  --muted-foreground: oklch(70.8% 0 0deg);
-  --accent: oklch(26.9% 0 0deg);
-  --accent-foreground: oklch(98.5% 0 0deg);
+  --background: oklch(11% 0.01 258deg);
+  --foreground: oklch(95% 0 0deg);
+  --card: oklch(16% 0.01 258deg);
+  --card-foreground: oklch(95% 0 0deg);
+  --popover: oklch(16% 0.01 258deg);
+  --popover-foreground: oklch(95% 0 0deg);
+  --primary: oklch(68% 0.2 30deg);
+  --primary-foreground: oklch(12% 0 0deg);
+  --secondary: oklch(22% 0.01 258deg);
+  --secondary-foreground: oklch(95% 0 0deg);
+  --muted: oklch(22% 0.01 258deg);
+  --muted-foreground: oklch(68% 0 0deg);
+  --accent: oklch(22% 0.01 258deg);
+  --accent-foreground: oklch(95% 0 0deg);
   --success: oklch(79.2% 0.209 151.711deg);
   --destructive: oklch(70.4% 0.191 22.216deg);
   --border: oklch(100% 0 0deg / 10%);

@@ -6,10 +6,10 @@ test.describe('Home Page', () => {
   })
 
   test('loads successfully with main content', async ({ page }) => {
-    await expect(page).toHaveTitle(/Sabertaz Blog/)
+    await expect(page).toHaveTitle(/The Pauli Effect/)
     const mainContent = page.getByTestId('hero-section')
     await expect(mainContent).toBeVisible()
-    await expect(mainContent).toHaveText(/Coder|Developer|Learner/)
+    await expect(mainContent).toHaveText(/AI Operator|Builder|Creator/)
   })
 
   test('navigates to posts page', async ({ page }) => {

@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "Sabertaz Blog",
-    "description": "A modern blog about web development, programming, and technology. Sharing insights on React, TypeScript, Next.js, and more.",
-    "landingTitles": ["Coder", "Developer", "Learner"]
+    "title": "The Pauli Effect",
+    "description": "AI operator, builder, and creator. Sharing insights on AI, automation, and building small apps that solve big problems — powered by Kupuri Media.",
+    "landingTitles": ["AI Operator", "Builder", "Creator"]
   },
   "routes": {
     "posts": {
       "name": "Posts",
-      "title": "Sabertaz Blog",
-      "description": "Sharing technical articles and thoughts."
+      "title": "The Pauli Effect",
+      "description": "AI insights, builder stories, and creative experiments from the Kupuri Media lab."
     },
     "about": {
       "name": "About",

@@ -1,9 +1,9 @@
 {
   "origins": [
-    "https://blog.tazimi.dev"
+    "https://pauli-blog.vercel.app"
   ],
   "originsRegex": [
-    "https://blog-git-([A-z0-9]|-)*sabertaz\\.vercel\\.app"
+    "https://pauli-blog-git-([A-z0-9]|-)*executiveusa\\.vercel\\.app"
   ],
   "defaultCommentOrder": "oldest"
 }
