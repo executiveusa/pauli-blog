@@ -74,6 +74,7 @@ const siteConfig: SiteConfig = {
     repoId: 'R_kgDORrYLKQ',
     category: 'Announcements',
     categoryId: 'DIC_kwDORrYLKc4C4x83',
+    mapping: 'specific',
   },
 }
 
