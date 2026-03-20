@@ -12,18 +12,13 @@ const messagesEnUS = JSON.parse(readFileSync(join(process.cwd(), 'messages/en-US
   string,
   unknown
 >
-const messagesZhCN = JSON.parse(readFileSync(join(process.cwd(), 'messages/zh-CN.json'), 'utf-8')) as Record<
-  string,
-  unknown
->
 const messages = {
   'en-US': messagesEnUS,
-  'zh-CN': messagesZhCN,
 }
 
 interface AllTheProvidersProps {
   children: ReactNode
-  locale?: 'en-US' | 'zh-CN'
+  locale?: 'en-US'
 }
 
 function AllTheProviders({ children, locale = 'en-US' }: AllTheProvidersProps) {
@@ -37,7 +32,7 @@ function AllTheProviders({ children, locale = 'en-US' }: AllTheProvidersProps) {
 }
 
 interface CustomRenderOptions extends Omit<RenderOptions, 'wrapper'> {
-  locale?: 'en-US' | 'zh-CN'
+  locale?: 'en-US'
 }
 
 function customRender(ui: ReactElement, options?: CustomRenderOptions) {
