@@ -1,17 +1,17 @@
 {
-  "name": "@sabertazimi/blog",
+  "name": "@executiveusa/pauli-blog",
   "version": "5.4.0",
   "private": true,
   "packageManager": "pnpm@10.30.1",
   "description": "A blog system based on React and Next",
-  "author": "sabertazimi",
+  "author": "THE PAULI EFFECT",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sabertazimi/blog"
+    "url": "https://github.com/executiveusa/pauli-blog"
   },
   "bugs": {
-    "url": "https://github.com/sabertazimi/blog/issues"
+    "url": "https://github.com/executiveusa/pauli-blog/issues"
   },
   "keywords": [
     "blog",
