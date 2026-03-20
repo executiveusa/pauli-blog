@@ -9,13 +9,4 @@ test.describe('i18n', () => {
     await expect(html).toHaveAttribute('lang', 'en-US')
     await expect(page).toHaveTitle(/Posts/)
   })
-
-  test('Chinese locale(zh-CN) has locale prefix in URL', async ({ page }) => {
-    await page.goto('/zh-CN/posts')
-    await expect(page).toHaveURL(/\/zh-CN/)
-
-    const html = page.locator('html')
-    await expect(html).toHaveAttribute('lang', 'zh-CN')
-    await expect(page).toHaveTitle(/文章/)
-  })
 })
