@@ -4,14 +4,13 @@ import { siteConfig } from '@/lib/site'
 
 const localeNames: Record<string, string> = {
   'en-US': 'English',
-  'zh-CN': '中文',
 }
 
 async function generateLlmsTxt(): Promise<string> {
   const lines: string[] = []
 
-  lines.push(`# ${siteConfig.author}'s Blog`)
-  lines.push(`> A modern blog about web development, programming, and technology.`)
+  lines.push(`# ${siteConfig.author}`)
+  lines.push(`> A blog about AI, technology, and the chaos of building things.`)
   lines.push('')
   lines.push(`## Main Navigation`)
   lines.push(`- [Home](${siteConfig.url}): Landing page with featured content`)
