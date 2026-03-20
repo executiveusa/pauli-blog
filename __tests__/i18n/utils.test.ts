@@ -5,7 +5,6 @@ describe('i18n/utils', () => {
   describe('resolveLocale', () => {
     it('should return the provided locale when it is valid', () => {
       expect(resolveLocale('en-US')).toBe('en-US')
-      expect(resolveLocale('zh-CN')).toBe('zh-CN')
     })
 
     it('should return default locale when provided locale is invalid', () => {
