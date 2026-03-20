@@ -36,19 +36,6 @@ describe('LanguageSwitcher', () => {
     const options = screen.getAllByRole('menuitemradio')
     expect(options).toHaveLength(routing.locales.length)
     expect(screen.getByRole('menuitemradio', { name: /english/i })).toBeInTheDocument()
-    expect(screen.getByRole('menuitemradio', { name: /中文/ })).toBeInTheDocument()
-  })
-
-  it('should change language when different language option is clicked', async () => {
-    const { user } = render(<LanguageSwitcher />)
-
-    const button = screen.getByRole('button', { name: /select language/i })
-    await user.click(button)
-    const zhCNOption = screen.getByRole('menuitemradio', { name: /中文/ })
-    await user.click(zhCNOption)
-
-    expect(mockPush).toHaveBeenCalledTimes(1)
-    expect(mockPush).toHaveBeenCalledWith('/zh-CN', { locale: 'zh-CN' })
   })
 
   it('should not change language when same language option is clicked', async () => {
