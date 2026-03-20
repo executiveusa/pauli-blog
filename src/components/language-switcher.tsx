@@ -19,7 +19,6 @@ import { routing } from '@/i18n/routing'
 
 const localeNames: Record<Locale, { flag: string, name: string }> = {
   'en-US': { flag: '🇺🇸', name: 'English' },
-  'zh-CN': { flag: '🇨🇳', name: '中文' },
 }
 
 export function LanguageSwitcher() {
