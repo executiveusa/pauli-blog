@@ -38,10 +38,9 @@ async function generateRssFeed(locale: Locale): Promise<string> {
     </item>`
   })
 
-  const localeTitle = locale === 'zh-CN' ? 'Sabertaz 博客' : 'Sabertaz Blog'
-  const localeDescription = locale === 'zh-CN'
-    ? '一个关于 Web 开发、编程和技术的现代博客'
-    : 'A modern blog about web development, programming, and technology'
+  const localeTitle = 'The Pauli Effect'
+  const localeDescription = 'A blog about AI, technology, and the chaos of building things.'
+
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
