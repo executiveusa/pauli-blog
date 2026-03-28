@@ -18,7 +18,7 @@ jobs:
           submodules: true
           fetch-depth: 1
       - name: Comment pull request
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           number: ${{ github.event.pull_request.number }}
           header: lighthouse
@@ -33,7 +33,7 @@ jobs:
           max_timeout: 1200
           check_interval: 15
       - name: Comment preview result
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           number: ${{ github.event.pull_request.number }}
           header: lighthouse
@@ -91,7 +91,7 @@ jobs:
 
             fs.writeFileSync('lighthouse-${{ matrix.device }}.json', JSON.stringify(data));
       - name: Upload results
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: lighthouse-data-${{ matrix.device }}
           path: lighthouse-${{ matrix.device }}.json
@@ -102,11 +102,11 @@ jobs:
     needs: audit
     steps:
       - name: Download Desktop results
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: lighthouse-data-Desktop
       - name: Download Mobile results
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: lighthouse-data-Mobile
       - name: Format audit result
@@ -148,7 +148,7 @@ jobs:
 
             core.setOutput("comment", comment);
       - name: Comment audit result
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           number: ${{ github.event.pull_request.number }}
           header: lighthouse
